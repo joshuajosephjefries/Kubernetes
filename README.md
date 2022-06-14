@@ -12,3 +12,6 @@ STATEFUL SET APPLICATION (kind: StatefulSet)
    <li> Ordered, graceful deployment and scaling.
    <li> Ordered, automated rolling updates.
 </ul>
+Individual pods in stateful set are susceptible to failures, therefore we use Persistant volumes to replace any that have fails. 
+Persistant Volume Claim (PVC) is granted by EBS (suppose) or any backend storage device. 
+If any pod in the stateful set requires a storage, it sends the PVC claim request to the EBS and if there is availability, it grants the Persistant Volume to the pod. This way pod keeps a track of everything and if the pod goes down, it is brought back up in the same state by using the PV data. 
