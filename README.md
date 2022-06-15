@@ -16,3 +16,4 @@ STATEFUL SET APPLICATION (kind: StatefulSet)
 <br> Persistant Volume Claim (PVC) is granted by EBS (suppose) or any backend storage device. </br>
 <br> If any pod in the stateful set requires a storage, it sends the PVC claim request to the EBS and if there is availability, it grants the Persistant Volume to the pod. </br>
 <br> This way pod keeps a track of everything and if the pod goes down, it is brought back up in the same state by using the PV data. </br>
+<br> In real time statefulset is tidious. Therefore, most of the developers deploy application using Deployment kind. </br>
