@@ -5,7 +5,7 @@ metadata:
 spec:
   triggers:
   - github:
-      secret: 5Mlic4Le
+      secret: XXXXXXX
     type: GitHub
   - generic:
       secret: FiArdDBH
