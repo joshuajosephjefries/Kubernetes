@@ -8,7 +8,7 @@ spec:
       secret: XXXXXXX
     type: GitHub
   - generic:
-      secret: FiArdDBH
+      secret: XXXXXXX
     type: Generic
   strategy:
     type: "JenkinsPipeline"
